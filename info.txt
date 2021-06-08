@@ -1,0 +1,8 @@
+Click "Add Category" to add a category then write the name of the category and click "Submit".
+
+If you want to export your taxonomy you should click the 'Export' button and it will save a 'pagestaxonomy.json' file in your 'Download' folder.
+
+If you want to import a taxonomy you should replace the 'pagestaxonomy.json' file in this plugin's folder with the 'pagestaxonomy.json' 
+file containing the taxonomy you want to import and then click the 'Import' button.
+
+Warning: if you import an external taxonomy the taxonomy you have saved will be lost.
