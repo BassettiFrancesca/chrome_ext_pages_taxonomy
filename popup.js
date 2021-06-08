@@ -534,7 +534,7 @@ function showListofDescriptions(c) {
                 let categoryListSerialized = JSON.stringify(listOfCategories);
                 localStorage.setItem("categoryList", categoryListSerialized);
                 document.getElementById(`${descriptionUrl.description}bm`).remove();
-                deleteItem(descriptionUrl.description, c.descriptions);
+                deleteDescription(descriptionUrl.description, c.descriptions);
             },
             modifyName : function() {
                 msgFInb.innerHTML = '';
