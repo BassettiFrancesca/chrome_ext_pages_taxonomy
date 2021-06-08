@@ -1046,7 +1046,7 @@ function delDescription(cs, ds, list, foundbd) {
                 break;
             }
             if (c.name == cs.name) {
-                deleteDescription(ds.name, c.descriptions);
+                deleteDescription(ds.description, c.descriptions);
                 foundbd = true;
             } else {
                 foundbd = delDescription(cs, ds, c.categories, foundbd);
