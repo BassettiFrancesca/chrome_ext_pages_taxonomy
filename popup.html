@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="popup.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <title>Pages taxonomy</title>
+</head>
+<body>
+
+    <div class="show"><a id="show-insert-description" class="buttons">Add Description</a></div>
+
+    <form id="insert-description">
+        <div>
+            <label for="description-id" class="labels">Insert the description of the page:</label>
+            <input type="text" id="description-id" placeholder="Description" class="text-input">
+        </div>
+        <div id="msg" class="msg"></div>
+        <div class="select">
+            <p class="labels">Select category: </p>
+            <ul id="categories"></ul>
+            <div id="msg-categories" class="msg"></div>
+        </div>
+        <input class="buttons" type="submit" value="Submit">
+    </form>
+
+    <div class="show"><a id="show-insert-category" class="buttons">Add Category</a></div>
+
+    <form id="insert-category">
+        <div>
+            <label for="category-id" class="labels">Insert the category:</label>
+            <input type="text" id="category-id" placeholder="Category" class="text-input">
+        </div>
+        <div id="msg-c" class="msg"></div>
+        <div class="select">
+            <p class="labels">Select category: </p>
+            <ul id="categories-c"></ul>
+            <div id="msg-categories-c" class="msg"></div>
+        </div>
+        <input class="buttons" type="submit" value="Submit">
+    </form>
+
+    <div class="show"><a id="show-categories" class="buttons">Show Taxonomy</a></div>
+
+    <ul id="category-list"></ul>
+
+    <div class="show"><a id="show-imp-exp" class="buttons">Import & Export</a></div>
+
+    <div id="imp-exp">
+
+        <div class="show"><a id="instructions" class="buttons">Instructions</a></div>
+        <div id="instructions-text">
+            <p>If you want to export your taxonomy you should click the 'Export' button and it will save a 'pagestaxonomy.json' file in your 'Download' folder.</p>
+            <p>If you want to import a taxonomy you should replace the 'pagestaxonomy.json' file in this plugin's folder with the 'pagestaxonomy.json' file 
+            containing the taxonomy you want to import and then click the 'Import' button.</p>
+            <p><span id="warning">Warning:</span> if you import an external taxonomy the taxonomy you have saved will be lost.</p>
+        </div>
+
+        <div class="show"><a id="import" class="buttons">Import</a></div>
+        <div id="import-success"><div class="success"><p id="msg-import"></p> <span class="material-icons-outlined cross" id="del-is" style="font-size: 20px;">cancel</span></div></div>
+
+        <div class="show"><a id="export" class="buttons">Export</a></div>
+        <div id="export-success"><div class="success"><p>Your taxonomy has been exported successfully</p> <span class="material-icons-outlined cross" id="del-es" style="font-size: 20px;">cancel</span></div></div>
+
+    </div>
+
+</body>
+</html>

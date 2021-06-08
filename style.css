@@ -1,0 +1,205 @@
+#show-insert-description, #show-insert-category, #show-categories, #show-imp-exp, #import, #export, #instructions {
+    display: block;
+}
+
+#insert-description, #insert-category, #category-list, #imp-exp, #instructions-text, #import-success, #export-success {
+    display: none;
+}
+
+* {
+    background-color: #f5f5f5;
+    font-family: Tahoma, "Trebuchet MS", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: .05em;
+    color: #9e9e9e;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding-inline-start: 20px;
+}
+
+.buttons, .open {
+    color: #f5f5f5;
+    padding: 10px;
+    margin: 7px 1px 7px 1px;
+    border-radius: 5px;
+    width: 220px;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+}
+
+.buttons {
+    background-color: #9e9e9e;
+}
+
+.open {
+    background-color: #757575;
+}
+
+.show {
+    width: 100%;
+    overflow: auto;
+}
+
+::placeholder {
+    color: #cacaca;
+    font-weight: normal;
+    letter-spacing: .00em;
+}
+
+.labels {
+    color: #9e9e9e;
+    margin: 5px;
+}
+
+#insert-description .labels, #description-id, #insert-category .labels, #category-id {
+    width: 220px;
+}
+
+input.buttons {
+    border: 0;
+    width: 70%;
+    margin: 20px 15% 40px 15%;
+    padding: 5px;
+}
+
+input.buttons:hover, .buttons:hover {
+    background-color: #757575;
+}
+
+.text-input {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 3px;
+    border: 1px solid #9e9e9e;
+    padding: 5px;
+    margin: 10px 5px 5px 5px;
+}
+
+.select {
+    margin-top: 20px;
+}
+
+.no-categories, .msg {
+    color: #000000;
+    margin: 5px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+.selected {
+    color: #252525;
+    font-weight: bold;
+}
+
+.not-selected {
+    color: #5e5e5e;
+    font-weight: normal;
+}
+
+#warning {
+    color: #252525;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.container span {
+    cursor: pointer;
+}
+
+.container span:hover {
+    color: #757575;
+}
+
+.container-sel, .int-container, .int-container-dx {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    cursor: pointer;
+}
+
+.container-sel:hover, .int-container:hover, .int-container-dx:hover {
+    color: #757575;
+}
+
+.int-container-dx {
+    margin-left: 15px;
+}
+
+.int-container span, .container-sel span {
+    margin-right: 5px;
+}
+
+.success {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.success span {
+    margin-left: 10px;
+}
+
+.success p {
+    text-align: center;
+}
+
+.yn:hover {
+    color: #252525;
+}
+
+.yn {
+    cursor: pointer;
+    margin: 4px;
+}
+
+.check {
+    text-align: center;
+}
+
+.delete {
+    margin-left: 3px;
+}
+
+.cross {
+    cursor: pointer;
+}
+
+.cross:hover {
+    color: #252525;
+}
+
+.modify {
+    overflow: hidden;
+    margin: 15px 0 20px 0;
+}
+
+.modify .buttons {
+    margin: 0 15px 0 15px;
+    width: 60px;
+    padding: 6px;
+}
+
+.int-container a:hover {
+    color: #757575;
+}
+
+.container-sel span:hover{
+    color: #757575;
+}
+
+.container-sel a:hover{
+    font-weight: bold;
+}
