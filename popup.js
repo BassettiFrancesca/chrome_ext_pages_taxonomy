@@ -181,24 +181,24 @@ function showSelectListofCategories(listOfCt, fds) {
 
                 if (categorySelected == c) {
                     categorySelected = undefined;
-                    document.getElementById(`${c.name}category`).setAttribute('class', 'not-selected');
+                    document.getElementById(`${c.name}container`).setAttribute('class', 'container-sel not-selected');
                 } else {
                     if (categorySelected) {
-                        document.getElementById(`${categorySelected.name}category`).setAttribute('class', 'not-selected');
+                        document.getElementById(`${categorySelected.name}container`).setAttribute('class', 'container-sel not-selected');
                     }
                     categorySelected = c;
-                    document.getElementById(`${c.name}category`).setAttribute('class', 'selected');
+                    document.getElementById(`${c.name}container`).setAttribute('class', 'container-sel selected');
                 }
     
                 if (c.open == false){
-                    document.getElementById(`${c.name}icon`).innerHTML = 'folder_open';
+                    document.getElementById(`${c.name}icon`).setAttribute('class', 'material-icons-outlined');
                     c.open = true;
                     document.getElementById(`${c.name}f`).style.display = 'block';
                     if (c.categories.length > 0) {
                         showSelectListofCategories(c.categories, document.getElementById(`${c.name}f`));
                     }
                 } else {
-                    document.getElementById(`${c.name}icon`).innerHTML = 'folder';
+                    document.getElementById(`${c.name}icon`).setAttribute('class', 'material-icons');
                     document.getElementById(`${c.name}f`).style.display = 'none';
                     c.open = false;
                 }
@@ -215,15 +215,15 @@ function showSelectListofCategories(listOfCt, fds) {
         const i = document.createElement('span');
         const a = document.createElement('a');
         const container = document.createElement('p');
+        container.setAttribute('id', `${c.name}container`);
         a.style.display = 'block';
         a.setAttribute('id', `${c.name}category`);
-        a.setAttribute('class', 'not-selected');
         const ul = document.createElement('ul');
 
-        container.setAttribute('class', 'container-sel');
+        container.setAttribute('class', 'container-sel not-selected');
 
         i.setAttribute('class', 'material-icons');
-        i.innerHTML = 'folder';
+        i.innerHTML = 'category';
         i.style.fontSize = '20px';
         i.setAttribute('id', `${c.name}icon`);
 
@@ -252,7 +252,7 @@ function showListofCategories(listOfCt, ct) {
             open : false,
             openCategory : function() {
                 if (c.open == false){
-                    document.getElementById(`${c.name}icon`).innerHTML = 'folder_open';
+                    document.getElementById(`${c.name}icon`).setAttribute('class', 'material-icons-outlined');
                     document.getElementById(`${c.name}d`).style.display = 'none';
                     document.getElementById(`${c.name}m`).style.display = 'none';
                     document.getElementById(`${c.name}f`).innerHTML = '';
@@ -267,7 +267,7 @@ function showListofCategories(listOfCt, ct) {
                     }
                     c.open = true;
                 } else {
-                    document.getElementById(`${c.name}icon`).innerHTML = 'folder';
+                    document.getElementById(`${c.name}icon`).setAttribute('class', 'material-icons');
                     document.getElementById(`${c.name}f`).style.display = 'none';
                     document.getElementById(`${c.name}b`).style.display = 'none';
                     document.getElementById(`${c.name}d`).style.display = 'none';
@@ -422,7 +422,7 @@ function showListofCategories(listOfCt, ct) {
         containerDx.setAttribute('class', 'int-container-dx');
 
         i.setAttribute('class', 'material-icons');
-        i.innerHTML = 'folder';
+        i.innerHTML = 'category';
         i.style.fontSize = '20px';
         i.setAttribute('id', `${c.name}icon`);
 
@@ -640,8 +640,8 @@ function showListofDescriptions(c) {
         containerSx.setAttribute('class', 'int-container');
         containerDx.setAttribute('class', 'int-container-dx');
 
-        i.setAttribute('class', 'material-icons-sharp');
-        i.innerHTML = 'bookmark';
+        i.setAttribute('class', 'material-icons-outlined');
+        i.innerHTML = 'description';
         i.style.fontSize = '20px';
 
         modify.setAttribute('class', 'material-icons-outlined');
@@ -1104,9 +1104,11 @@ instr.addEventListener('click', openInstructions);
 function openInstructions() {
     if (instrOpen == false) {
         instrOpen = true;
+        instr.setAttribute('class', 'open');
         instrT.style.display = 'block';
     } else {
         instrOpen = false;
+        instr.setAttribute('class', 'buttons');
         instrT.style.display = 'none';
     }
 }

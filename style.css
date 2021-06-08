@@ -11,7 +11,7 @@
     font-family: Tahoma, "Trebuchet MS", Helvetica, Arial, sans-serif;
     font-weight: bold;
     letter-spacing: .05em;
-    color: #9e9e9e;
+    color: #757575;
 }
 
 li {
@@ -38,6 +38,10 @@ ul {
 }
 
 .open {
+    background-color: #494949;
+}
+
+#imp-exp .open {
     background-color: #757575;
 }
 
@@ -53,7 +57,6 @@ ul {
 }
 
 .labels {
-    color: #9e9e9e;
     margin: 5px;
 }
 
@@ -94,14 +97,22 @@ form {
     margin-top: 10px;
 }
 
-.selected {
-    color: #252525;
+.selected a {
+    color: #000000;
     font-weight: bold;
 }
 
-.not-selected {
-    color: #5e5e5e;
+.selected span {
+    color: #000000;
+}
+
+.not-selected a {
+    color: #757575;
     font-weight: normal;
+}
+
+.not-selected span {
+    color: #757575;
 }
 
 #warning {
@@ -120,7 +131,7 @@ form {
 }
 
 .container span:hover {
-    color: #757575;
+    color: #252525;
 }
 
 .container-sel, .int-container, .int-container-dx {
@@ -131,7 +142,7 @@ form {
 }
 
 .container-sel:hover, .int-container:hover, .int-container-dx:hover {
-    color: #757575;
+    color: #252525;
 }
 
 .int-container-dx {
@@ -154,6 +165,7 @@ form {
 
 .success p {
     text-align: center;
+    margin: 5px 10px 5px 10px;
 }
 
 .yn:hover {
@@ -193,11 +205,11 @@ form {
 }
 
 .int-container a:hover {
-    color: #757575;
+    color: #252525;
 }
 
 .container-sel span:hover{
-    color: #757575;
+    color: #252525;
 }
 
 .container-sel a:hover{
