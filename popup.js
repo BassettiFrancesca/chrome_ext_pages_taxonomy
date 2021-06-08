@@ -715,6 +715,7 @@ formCategory.addEventListener('submit', onSubmitCategory);
 function onSubmitCategory(e) {
 
     msgCC.innerHTML = '';
+    msgCategory.innerHTML = '';
 
     if (localStorage.getItem("categoryNames") != null) {
         listOfCN = JSON.parse(localStorage.getItem("categoryNames"));
@@ -806,6 +807,9 @@ function onSubmitCategory(e) {
 }
 
 async function saveBM() {
+
+    msg.innerHTML = '';
+    msgFs.innerHTML = '';
 
     let queryOptions = { active: true, currentWindow: true };
     let [tab] = await chrome.tabs.query(queryOptions);
