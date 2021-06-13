@@ -986,7 +986,7 @@ function deleteAllNames(c) {
     }
     if (c.descriptions.length > 0) {
         for (let k of c.descriptions) {
-            let l = listOfDN.indexOf(k.name);
+            let l = listOfDN.indexOf(k.description);
             listOfDN.splice(l, 1);
         }
         let listOfBNSerialized = JSON.stringify(listOfDN);
