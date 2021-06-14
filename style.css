@@ -223,3 +223,7 @@ form {
 #category-list > li > .modify .text-input {
     width: 90%;
 }
+
+#category-list {
+    margin: 10px 5px 10px 5px;
+}
