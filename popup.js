@@ -449,8 +449,9 @@ function showListofCategories(listOfCt, ct) {
         cancel.innerHTML = 'Cancel';
         cancel.addEventListener('click', c.undoModifyName);
         msgFIn.setAttribute('class', 'msg');
-        buttons.appendChild(cancel);
+        buttons.setAttribute('class', 'modify-buttons');
         buttons.appendChild(submit);
+        buttons.appendChild(cancel);
         modifyInput.appendChild(label);
         modifyInput.appendChild(nameInput);
         modifyInput.appendChild(msgFIn);
@@ -662,8 +663,9 @@ function showListofDescriptions(c) {
         cancel.innerHTML = 'Cancel';
         cancel.addEventListener('click', descriptionUrl.undoModifyName);
         msgFInb.setAttribute('class', 'msg');
-        buttons.appendChild(cancel);
+        buttons.setAttribute('class', 'modify-buttons');
         buttons.appendChild(submit);
+        buttons.appendChild(cancel);
         modifyInput.appendChild(label);
         modifyInput.appendChild(nameInput);
         modifyInput.appendChild(msgFInb);
@@ -1162,7 +1164,7 @@ function importJSON() {
         } 
         if (valid == false || sameN) {
             succImp.style.display = 'block';
-            msgImp.innerHTML = 'The taxonomy imported is not valid';
+            msgImp.innerHTML = 'The taxonomy you want to import is not valid';
             listOfCategories = [];
             listOfCN = [];
             listOfDN = [];
