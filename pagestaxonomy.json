@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "descriptions": [],
+    "categories": [
+      {
+        "descriptions": [],
+        "categories": [
+          {
+            "descriptions": [
+              {
+                "url": "https://e-l.unifi.it/course/view.php?id=20733",
+                "description": "Moodle"
+              }
+            ],
+            "categories": [],
+            "name": "PPM",
+            "open": false
+          }
+        ],
+        "name": "Ing Inf",
+        "open": false
+      }
+    ],
+    "name": "Università",
+    "open": false
+  },
+  {
+    "descriptions": [],
+    "categories": [
+      {
+        "descriptions": [
+          {
+            "url": "https://www.youtube.com/",
+            "description": "YouTube"
+          },
+          {
+            "url": "https://www.netflix.com/it/",
+            "description": "Netflix"
+          },
+          {
+            "url": "https://www.disneyplus.com/it-it",
+            "description": "Disney +"
+          },
+          {
+            "url": "https://www.primevideo.com/",
+            "description": "Amazon Prime"
+          }
+        ],
+        "categories": [],
+        "name": "Video",
+        "open": false
+      },
+      {
+        "descriptions": [
+          {
+            "url": "https://www.apple.com/it/apple-music/",
+            "description": "Apple Music"
+          },
+          {
+            "url": "https://www.spotify.com/it/",
+            "description": "Spotify"
+          }
+        ],
+        "categories": [],
+        "name": "Musica",
+        "open": false
+      }
+    ],
+    "name": "Svago",
+    "open": false
+  }
+]
