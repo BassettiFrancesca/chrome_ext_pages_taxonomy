@@ -228,3 +228,7 @@ form {
 #category-list {
     margin: 10px 5px 10px 5px;
 }
+
+#instructions-text {
+    margin: 0 10px 30px 10px;
+}
